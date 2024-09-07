@@ -1,0 +1,89 @@
+:root{
+    --COLOR-VERDE-SUMMA: rgb(88,172,109);
+    --COLOR-AZUL-SUMMA: rgb(164,224,184);
+}
+
+
+body{
+    font-family: "Permanent Marker";
+    background-color: black;
+}
+
+.title-pr{
+    position: relative;
+    top: 55px;
+    color: var(--COLOR-VERDE-SUMMA);
+}
+
+.container-process{
+    text-align: center;
+}
+
+.image-pr{
+    width: 250px;
+    position: relative;
+    top: 155px;
+    right: -55px;
+    padding-left: 55px;
+}
+
+
+.image-pr:hover{
+    animation: escala 2s 2;
+}
+
+button{
+    width: 150px;
+    font-size: 22px;
+    position: relative;
+    top: 280px;
+    right: 310px;
+    background-color: var(--COLOR-VERDE-SUMMA);
+    border: 1px solid white;
+    border-radius: 10%;
+    color: white;
+    font-family: "Permanent Marker";
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+
+@keyframes escala{
+    0%{
+        transform: scale(100%);
+    }
+
+    100%{
+        transform: scale(110%);
+    }
+}
+
+
+@media (max-width: 980px) {
+
+    .image-pr{
+        right: 15px;
+    }
+
+    button{
+        left: 10px;
+    }
+   
+    }
+
+@media (max-width: 980px) {
+
+    .image-pr{
+        width: 150px;
+        left: 65px;
+    }
+
+    button{
+        left: -180px;
+    }
+    
+    }

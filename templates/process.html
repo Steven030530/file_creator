@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/process.css">
+    <script src="static/js/main.js"></script>
+    <title>Process</title>
+    <div class="container-process">
+        <h1 class="title-pr">En que deseas transformar tu archivo:</h1>
+        <a href="{{ url_for('generator_file') }}">
+            <img class="image-pr" src="{{url_for('static',filename='images/file.png')}}" alt="pdf">
+        </a>
+        <a href="{{ url_for('generator_image') }}">
+            <img class="image-pr" src="{{url_for('static',filename='images/png.png')}}" alt="png">
+        </a>
+        <button onclick=regresar()>Regresar</button>
+    </div>
+
+
+</head>
+<body>
+    
+</body>
+</html>

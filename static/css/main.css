@@ -1,0 +1,271 @@
+
+:root{
+    --COLOR-VERDE-SUMMA: rgb(88,172,109);
+    --COLOR-AZUL-SUMMA: rgb(164,224,184);
+}
+
+
+body{
+    font-family: "Permanent Marker";
+}
+
+
+.title{
+    font-family: "Permanent Marker";
+    font-size: 110px;
+    text-align: center;
+    background: linear-gradient(90deg, var(--COLOR-AZUL-SUMMA) 0%, var(--COLOR-VERDE-SUMMA) 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: alarm 2s 2;
+    
+}
+
+
+
+.logo{
+    width: 350px;
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+.file-letter{
+    animation: transition-color 3s 2;
+}
+
+.definition {
+    width: 40px;
+    height: 40px; 
+    position: absolute;
+    border-radius: 50%; 
+    border: 2px dotted var(--COLOR-AZUL-SUMMA);
+    animation:pulse 4s 2;
+}
+
+.definition:hover{
+    cursor: pointer ;
+}
+
+
+p{
+    font-size: 23px;
+}
+
+.form-data{
+    text-align: center;
+
+}
+
+
+.img-file{
+    width: 80px;
+    position: relative;
+    top: 30px;
+}
+
+
+.fileInput{
+    width: 350px;
+    border: 5px solid var(--COLOR-VERDE-SUMMA);
+
+}
+
+.fileInputII{
+    width: 350px;
+    border: 5px solid var(--COLOR-VERDE-SUMMA);
+    position: relative;
+    left: 80px;
+
+}
+
+
+.file-ini{
+    position: relative;
+    top: 80px;
+    right: 150px;
+    width: 150px;
+    font-size: 22px;
+    font-family: "Permanent Marker";
+    color: var(--COLOR-VERDE-SUMMA);
+    border-radius: 10%;
+}
+
+#text-box {
+    display: none;
+    position: absolute;
+    top: 120px;
+    width: 300px;
+    right: 200px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+
+.highlight{
+    color: red;
+}
+
+.footer-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes alarm {
+    0% {
+        transform: translateX(-70px);
+        transform: rotateX(45deg);
+    }
+    25% {
+        transform: translateX(70px);
+        transform: rotateX(80deg);
+    }
+    50% {
+        transform: translateX(-70px);
+        transform: rotateY(45deg);
+    }
+    75% {
+        transform: translateX(70px);
+        transform: rotateX(-80deg);
+    }
+    100% {
+        transform: translateX(0);
+
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    .definition{
+        right: 150px;
+        top: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .definition{
+        right: 150px;
+        top: 50px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .definition{
+        width: 20px; 
+        height: 20px; 
+        font-size: 10px; 
+        right: 10px; 
+        top: 50px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .logo {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .logo {
+        width: 180px;
+        right: 0px;
+
+    }
+}
+
+
+@media (max-width: 950px) {
+    .logo {
+        display: none;
+
+    }
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(0.2);
+    }
+    
+    25%{
+        transform: scale(1.5);
+    }
+
+    50%{
+        transform: scale(0.7);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes transition-color {
+    
+    0% {
+        fill: orange;
+        
+    }
+
+
+    10% {
+        fill: orange;
+        
+    }
+
+    20% {
+        fill: orange;
+        
+    }
+
+    40% {
+        fill: red;
+        
+    }
+
+    60% {
+        fill: red;
+        
+    }
+
+    80% {
+        fill: var(--COLOR-VERDE-SUMMA);
+       
+    }
+
+    100% {
+        fill: var(--COLOR-VERDE-SUMMA);
+        
+    }
+}
+
+
+@media (min-width: 768px) {
+    #text-box{
+        right: 200px;
+        top: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    #text-box{
+        right: 150px;
+        top: 100px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #text-box{
+        width: 20px; 
+        height: 20px; 
+        font-size: 10px; 
+        right: 10px; 
+        top: 250px;
+    }
+}

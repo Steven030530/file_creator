@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/success.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="static/js/main.js"></script>
+    <title>Sucess</title>
+</head>
+<body>
+    <h1 class="title">FELICITACIONES</h1>
+    <img class="happy" src="{{url_for('static',filename='images/happy.png')}}" alt="happy">
+    <div class="container-sucess">
+        <p class="msg-success">¡Tus cartas han sido generadas exitosamente, recuerda revisar tu carpeta de descargas!</p>
+        <img class="confeti" src="{{url_for('static',filename='images/confeti.png')}}" alt="confeti">
+        <button onclick=regresar()>Regresar</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+:root{
+    --COLOR-VERDE-SUMMA: rgb(88,172,109);
+    --COLOR-AZUL-SUMMA: rgb(164,224,184);
+}
+
+
+body{
+    font-family: "Permanent Marker";
+}
+
+.title{
+    font-family: "Permanent Marker";
+    font-size: 110px;
+    text-align: center;
+    background: linear-gradient(90deg, var(--COLOR-AZUL-SUMMA) 0%, var(--COLOR-VERDE-SUMMA) 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.container-form{
+    text-align: center;
+}
+
+
+.file-ini{
+    position: relative;
+    top: 80px;
+    right: 150px;
+    width: 150px;
+    font-size: 22px;
+    font-family: "Permanent Marker";
+    color: var(--COLOR-VERDE-SUMMA);
+    border-radius: 10%;
+}
+
+#secondform{
+    position: relative;
+    top: 100px;
+}
+.selector{
+    width: 250px;
+    border: 5px solid var(--COLOR-VERDE-SUMMA);
+    position: relative;
+    left: 80px;
+}
+
+.highlight{
+    color: red;
+}
+
+p{
+    font-size: 23px;
+}
+
+.selectorII{
+    width: 250px;
+    border: 5px solid var(--COLOR-VERDE-SUMMA);
+    position: relative;
+    left: 80px;
+}
+

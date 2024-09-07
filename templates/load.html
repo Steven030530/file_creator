@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bd.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="static/js/main.js"></script>
+    <title>Information</title>
+</head>
+<body>
+    <h1 class="title">Base de Datos</h1>
+    <form id="firtsform" action="/load_data" method="post" enctype="multipart/form-data">
+        <div class="container-form">
+            <p><span class="highlight">(*)</span>
+                Selecciona la hoja de la base de datos:</p>
+            <select class="selector" name="hojas" id="hojas">
+                {% for hoja in hojas_columns %}
+                    <option value="{{ hoja }}">{{ hoja }}</option>
+                {% endfor %}
+            </select>
+            <button class="file-ini" type="submit">Actualizar</button>
+        </div>
+    </form>
+
+    <form id="secondform" action="/file_process" method="post" enctype="multipart/form-data">
+        <div class="container-form">
+            <p><span class="highlight">(*)</span> Selecciona la columna a utilizar:</p>
+            <select class="selectorII" name="columns" id="columns">
+                {% for column in name_columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                {% endfor %}
+            </select>
+            <button class="file-ini" type="submit">Siguiente</button>
+        </div>
+    </form>
+</body>
+</html>
