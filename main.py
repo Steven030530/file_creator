@@ -140,12 +140,14 @@ def generator_image():
     try:
         with open(selected_num_path, 'r') as file:
                 num_pages = int(file.read().strip())
-
-        with open(selected_column_path, 'r') as file:
-                name_column = file.read().strip()
-        columns_name = pd.read_excel(os.path.join(path_file,'bd.xlsx'))[name_column]
     except Exception as e:
         return str(e)
+    try:
+        with open(selected_column_path, 'r') as file:
+                name_column = file.read().strip()
+                columns_name = pd.read_excel(os.path.join(path_file,'bd.xlsx'))[name_column]
+    except:
+        pass
    
     creator = Creator
     route_download = ruta_descarga
