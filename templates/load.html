@@ -26,7 +26,7 @@
     <form id="secondform" action="/file_process" method="post" enctype="multipart/form-data">
         <div class="container-form">
             <p><span class="highlight">(*)</span> Selecciona la columna a utilizar:</p>
-            <select class="selectorII" name="columns" id="columns">
+            <select class="selectorII" name="columns" id="columns" required>
                 {% for column in name_columns %}
                     <option value="{{ column }}">{{ column }}</option>
                 {% endfor %}
