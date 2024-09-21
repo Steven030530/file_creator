@@ -7,7 +7,10 @@ from static.python.utils import setup_logging
 
 app = Flask(__name__)
 ruta_usuario = os.getenv('USERPROFILE')
-ruta_descarga = os.path.join(ruta_usuario,'Downloads')
+if ruta_usuario == None:
+    ruta_usuario = '/home/<NombreDeUsuario>/Downloads'
+else:
+    ruta_descarga = os.path.join(ruta_usuario,'Downloads')
 
 setup_logging()
 
