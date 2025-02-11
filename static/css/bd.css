@@ -5,7 +5,7 @@
 
 
 body{
-    font-family: "Permanent Marker";
+    font-family: "IBM Plex Sans";
 }
 
 .title{
@@ -29,9 +29,14 @@ body{
     right: 150px;
     width: 150px;
     font-size: 22px;
-    font-family: "Permanent Marker";
-    color: var(--COLOR-VERDE-SUMMA);
-    border-radius: 10%;
+    font-family: "IBM Plex Sans";
+    color: black;
+    border-radius: 5%;
+}
+
+.file-ini:hover{
+    background-color: darkgreen;
+    color: white;
 }
 
 #secondform{

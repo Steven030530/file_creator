@@ -17,11 +17,9 @@ body{
     background: linear-gradient(90deg, var(--COLOR-AZUL-SUMMA) 0%, var(--COLOR-VERDE-SUMMA) 35%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: alarm 2s 2;
+    animation: alarm 2s 1;
     
 }
-
-
 
 .logo{
     width: 350px;
@@ -50,6 +48,7 @@ body{
 
 p{
     font-size: 23px;
+    font-family:"IBM Plex Sans" ;
 }
 
 .form-data{
@@ -83,12 +82,17 @@ p{
 .file-ini{
     position: relative;
     top: 80px;
-    right: 150px;
+    right: 180px;
     width: 150px;
     font-size: 22px;
-    font-family: "Permanent Marker";
-    color: var(--COLOR-VERDE-SUMMA);
-    border-radius: 10%;
+    font-family: "IBM Plex Sans";
+    color: black;
+    border-radius: 5%;
+}
+
+.file-ini:hover{
+    background-color: darkgreen;
+    color: white;
 }
 
 #text-box {
@@ -111,8 +115,7 @@ p{
 
 .footer-svg {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
 }
 
 @keyframes alarm {

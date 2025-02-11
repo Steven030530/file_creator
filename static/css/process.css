@@ -40,13 +40,15 @@ button{
     right: 310px;
     background-color: var(--COLOR-VERDE-SUMMA);
     border: 1px solid white;
-    border-radius: 10%;
+    border-radius: 5%;
     color: white;
-    font-family: "Permanent Marker";
+    font-family: "IBM Plex Sans";
 
 }
 
 button:hover{
+    background-color: darkgreen;
+    color: white;
     cursor: pointer;
 }
 
